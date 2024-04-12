@@ -51,7 +51,7 @@ export type Post = {
 }
 ```
 
-Pretty cool right ? It's basically just writing golang struct and they get translated automatically. As for the `//?` that's just a random thing I came up with for to easily have optionals.
+Pretty cool right ? You just writing golang struct and they get translated for you. As for the `//?` that's just a random thing I came up with to easily have optional types.
 
 That's it, hopefully it'll be of use to somebody, if you have any issue or find a bug please open an issue and I'll do my best to fix it.
 
