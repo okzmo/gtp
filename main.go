@@ -76,7 +76,7 @@ func main() {
 	}
 
 	indentGlobal := ""
-	indentTypeField := ""
+	indentTypeField := "	"
 	if namespace != "" {
 		declareNamespace := fmt.Sprintf("declare namespace %s {\n", namespace)
 		if _, err := f.WriteString(declareNamespace); err != nil {
