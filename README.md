@@ -2,6 +2,8 @@ Disclaimer: This is mostly a toy project made in an afternoon so don't expect mi
 
 # Translate golang struct into ts types!
 
+![banner](./images/gtp_banner.png)
+
 gtp stands for: "Generate TyPes", yes I know I suck at naming things.
 
 Basically you can install it like this:
@@ -20,6 +22,7 @@ But what are these flags I'm using ? Glad you ask:
 ## Usage
 Here's what the translation looks like:
 ```go
+// models.go
 package models
 
 type User struct {
@@ -36,7 +39,10 @@ type Post struct {
 }
 ```
 
+Now we run ```gpt --in="./model.go" --out="./types"```
+
 ```ts
+// types/types.d.ts
 export type User = {
   username: string
   email: string
