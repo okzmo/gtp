@@ -10,7 +10,7 @@ Install it like this:
 Use it like this: 
 ```gpt --in="./model.go" --out="./types" --namespace="MyProject"```
 
-The flags you can use:
+Flags you can use:
 - `--namespace` followed by a String will tell the program that you want all of your structs to be part of a namespace. Very useful if you use JSDoc on the frontend, here's an example: `/** @type {MyProject.User} */`
 
 - `--in` the input for the program, it needs to be .go file to work otherwise you'll get an error.
