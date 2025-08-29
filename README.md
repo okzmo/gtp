@@ -10,8 +10,8 @@ Basically you can install it like this:
 And then you can simply use it like this: 
 ```gpt --in="./model.go" --out="./types" --namespace="MyProject"```
 
-But what are these flags I'm using ? Glad you ask:
-- `--namespace` followed by a String will tell the program that you want all of your structs to be part of a namespace. That's actually really useful if like me you like JSDoc in SvelteKit that way you can just do `/** @type {MyProject.User} */ and there your go it's typed!
+The flags you can use:
+- `--namespace` followed by a String will tell the program that you want all of your structs to be part of a namespace. Very useful if you use JSDoc on the frontend, here's an example: `/** @type {MyProject.User} */`
 
 - `--in` the input for the program, it needs to be .go file to work otherwise you'll get an error.
 
@@ -37,7 +37,7 @@ type Post struct {
 }
 ```
 
-Now we run ```gpt --in="./model.go" --out="./types"```
+Now we run ```gtp --in="./model.go" --out="./types"```
 
 ```ts
 // types/types.d.ts
@@ -55,8 +55,6 @@ export type Post = {
 }
 ```
 
-Pretty cool right ? You just writing golang struct and they get translated for you. As for the `//?` that's just a random thing I came up with to easily have optional types.
+Pretty cool right ? By the way you can use `//?` for optional types.
 
-That's it, hopefully it'll be of use to somebody, if you have any issue or find a bug please open an issue and I'll do my best to fix it.
-
-PS: You can combine this with [air](https://github.com/cosmtrek/air) for a really cool DX where you just change your golang structs and don't even have to think about executing `gtp`.
+If you have any issue or find a bug please open an issue and I'll fix it.
