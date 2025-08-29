@@ -2,12 +2,12 @@
 
 ![banner](./images/gtp_banner.png)
 
-gtp stands for: "Generate TyPes", yes I know I suck at naming things.
+GTP stands for: "Generate TyPes".
 
-Basically you can install it like this:
+Install it like this:
 ```go install github.com/okzmo/gtp@latest```
 
-And then you can simply use it like this: 
+Use it like this: 
 ```gpt --in="./model.go" --out="./types" --namespace="MyProject"```
 
 The flags you can use:
