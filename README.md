@@ -1,5 +1,3 @@
-Disclaimer: This is mostly a toy project made in an afternoon so don't expect miracles kind reader but it's actually the first time I built something that's actually useful (for me at least) so I'm quite happy with the result!
-
 # Translate golang struct into ts types!
 
 ![banner](./images/gtp_banner.png)
